@@ -40,8 +40,8 @@ Getting Started with Elixir
 Section: 2
 0 / 19
 Advanced Elixir and OTP
-[ ] 19. The Course Overview 2:50
-[ ] 20. Enumerables 7:04
+[x] 19. The Course Overview 2:50
+[x] 20. Enumerables 7:04
 [ ] 21. Streams 7:13
 [ ] 22. Defining Protocols 3:11
 [ ] 23. Implementing Protocols 5:22
