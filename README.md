@@ -42,9 +42,9 @@ Section: 2
 Advanced Elixir and OTP
 [x] 19. The Course Overview 2:50
 [x] 20. Enumerables 7:04
-[ ] 21. Streams 7:13
-[ ] 22. Defining Protocols 3:11
-[ ] 23. Implementing Protocols 5:22
+[x] 21. Streams 7:13
+[x] 22. Defining Protocols 3:11
+[x] 23. Implementing Protocols 5:22
 [ ] 24. Launching and Linking 5:12
 [ ] 25. Messaging 7:07
 [ ] 26. ETS 7:41
