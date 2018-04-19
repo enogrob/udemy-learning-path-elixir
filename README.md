@@ -50,7 +50,7 @@ Advanced Elixir and OTP
 [x] 26. ETS 7:41
 [x] 27. DETS and Mnesia 6:28
 [x] 28. Quote and Unquote 5:08
-[ ] 29. Macros 6:48
+[x] 29. Macros 6:48
 [ ] 30. Introduction to OTP 4:31
 [ ] 31. OTP Feature Set — GenServer 6:17
 [ ] 32. Application 4:03
