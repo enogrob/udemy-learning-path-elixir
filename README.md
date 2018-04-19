@@ -45,10 +45,10 @@ Advanced Elixir and OTP
 [x] 21. Streams 7:13
 [x] 22. Defining Protocols 3:11
 [x] 23. Implementing Protocols 5:22
-[ ] 24. Launching and Linking 5:12
-[ ] 25. Messaging 7:07
-[ ] 26. ETS 7:41
-[ ] 27. DETS and Mnesia 6:28
+[x] 24. Launching and Linking 5:12
+[x] 25. Messaging 7:07
+[x] 26. ETS 7:41
+[x] 27. DETS and Mnesia 6:28
 [ ] 28. Quote and Unquote 5:08
 [ ] 29. Macros 6:48
 [ ] 30. Introduction to OTP 4:31

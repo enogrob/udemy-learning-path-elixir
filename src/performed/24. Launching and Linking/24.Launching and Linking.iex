@@ -1,0 +1,34 @@
+iex(1)> self()
+#PID<0.88.0>
+
+iex(2)> me = self()
+#PID<0.88.0>
+
+iex(3)> Process.alive?(me)
+true
+
+iex(4)> other = spawn(fn -> IO.puts("Hello!") end)
+Hello!
+#PID<0.93.0>
+
+iex(5)> Process.alive?(other)
+false
+
+iex(6)> self()
+#PID<0.88.0>
+
+iex(7)> pid = spawn_link(fn -> raise "Boom" end)
+** (EXIT from #PID<0.88.0>) shell process exited with reason: an exception was raised:
+    ** (RuntimeError) Boom
+        (stdlib) erl_eval.erl:668: :erl_eval.do_apply/6
+07:52:14.891 [error] Process #PID<0.97.0> raised an exception
+** (RuntimeError) Boom
+    (stdlib) erl_eval.erl:668: :erl_eval.do_apply/6
+
+iex(1)> self()
+#PID<0.98.0>
+
+iex(2)> pid
+** (CompileError) iex:2: undefined function pid/0
+
+iex(2)>

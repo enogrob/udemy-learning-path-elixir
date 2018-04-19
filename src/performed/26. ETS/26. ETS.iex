@@ -1,0 +1,75 @@
+iex(2)> table = :ets.new(:books, [:set])
+#Reference<0.402523999.4276486145.79800>
+
+iex(3)> table |> :ets.insert({:fairy_tale, 10, 329})
+true
+
+iex(4)> table |> :ets.insert({:horror_novel, 9, 128})
+true
+
+iex(5)> table |> :ets.lookup(:horror_novel)
+[{:horror_novel, 9, 128}]
+
+iex(6)> table |> :ets.lookup(:fairy_tale)
+[{:fairy_tale, 10, 329}]
+
+iex(7)> table |> :ets.delete(:horror_novel)
+true
+
+iex(8)> table |> :ets.lookup(:horror_novel)
+[]
+
+iex(10)> table |> :ets.delete()
+true
+
+iex(11)> table |> :ets.lookup(:horror_novel)
+** (ArgumentError) argument error
+    (stdlib) :ets.lookup(#Reference<0.402523999.4276486145.79800>, :horror_novel)
+
+iex(11)> table = :ets.new(:books, [:set])
+#Reference<0.402523999.4276486145.80070>
+
+iex(12)> table |> :ets.insert({:mediocre_story, 2, 48})
+true
+
+iex(13)> table |> :ets.insert({:fable, 5, 120})
+true
+
+iex(14)> table |> :ets.match({"$1", 9, :"$2"})
+[]
+
+iex(15)> table |> :ets.insert({:horror_novel, 9, 128})
+true
+
+iex(16)> table |> :ets.insert({:fairy_tale, 10, 329})
+true
+
+iex(18)> table |> :ets.match({:"$1", 9, :"$2"})
+[[:horror_novel, 128]]
+
+iex(19)> table |> :ets.match({:"$1", 9, :"_"})
+[[:horror_novel]]
+
+iex(20)> table |> :ets.select([{{:"$1", 9, :"$3"}, [], [:"$1"]}])
+[:horror_novel]
+
+iex(21)> table |> :ets.select([{{:"$1", :"$2", :"$3"}, [], [:"$_"]}])
+[
+  {:mediocre_story, 2, 48},
+  {:fairy_tale, 10, 329},
+  {:fable, 5, 120},
+  {:horror_novel, 9, 128}
+]
+
+iex(23)> table |> :ets.select([{{:"$1", 9, :"$3"}, [], [:"$_"]}])
+[{:horror_novel, 9, 128}]
+
+iex(24)> table |> :ets.select([{{:"$1", :"$2", :"$3"}, [{:>=, :"$2",9}], [:"$_"]}])
+[{:fairy_tale, 10, 329}, {:horror_novel, 9, 128})
+
+iex(25)> expression = :ets.fun2ms(fn {title, rating, pages} = book when rating >= 9 -> book end)
+[{{:"$1", :"$2", :"$3"}, [{:>=, :"$2", 9}], [:"$_"]}]
+
+iex(26)> table |> :ets.select(expression)
+[{:fairy_tale, 10, 329}, {:horror_novel, 9, 128}]
+iex(27)>
