@@ -52,8 +52,8 @@ Advanced Elixir and OTP
 [x] 28. Quote and Unquote 5:08
 [x] 29. Macros 6:48
 [x] 30. Introduction to OTP 4:31
-[~] 31. OTP Feature Set — GenServer 6:17
-[~] 32. Application 4:03
+[x] 31. OTP Feature Set — GenServer 6:17
+[x] 32. Application 4:03
 [~] 33. The Supervisor Behaviour 4:39
 [~] 34. Supervision Strategies 3:40
 [~] 35. Agents and Tasks 5:08
