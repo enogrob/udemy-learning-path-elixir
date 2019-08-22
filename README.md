@@ -22,20 +22,20 @@ Getting Started with Elixir
 [x] 2. What is Elixir? 5:23
 [x] 3. Functional Programming 4:25
 [x] 4. Literals and Operators 9:33
-[ ] 5. Collection Types 12:31
-[ ] 6. Pattern Matching versus Assignment 3:50
-[ ] 7. Forms of Pattern Matching 6:39
-[ ] 8. Functions and Modules 8:41
-[ ] 9. Pattern Matching in Functions 4:48
-[ ] 10. Anonymous Functions 5:18
-[ ] 11. Recursion 4:15
-[ ] 12. Conditionals 6:41
-[ ] 13. Exception Handling 4:07
-[ ] 14. Standard IO 3:45
-[ ] 15. Files 4:06
-[ ] 16. Creating an Application 4:25
-[ ] 17. Importing Dependencies 6:18
-[ ] 18. Running Tests 8:56
+[x] 5. Collection Types 12:31
+[x] 6. Pattern Matching versus Assignment 3:50
+[x] 7. Forms of Pattern Matching 6:39
+[x] 8. Functions and Modules 8:41
+[x] 9. Pattern Matching in Functions 4:48
+[x] 10. Anonymous Functions 5:18
+[x] 11. Recursion 4:15
+[x] 12. Conditionals 6:41
+[x] 13. Exception Handling 4:07
+[x] 14. Standard IO 3:45
+[x] 15. Files 4:06
+[x] 16. Creating an Application 4:25
+[x] 17. Importing Dependencies 6:18
+[x] 18. Running Tests 8:56
 
 Section: 2
 0 / 19
